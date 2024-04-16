@@ -1,0 +1,43 @@
+.studio-comment-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  &:hover .video-title,
+  &:hover .username {
+    color: #065fd4;
+  }
+  .left {
+    display: flex;
+    .user-avt {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+    .comment-content {
+      margin-top: 10px;
+    }
+  }
+  .right {
+    display: flex;
+    width: 30%;
+    .video-thumbnail {
+      width: 120px;
+      object-fit: cover;
+      aspect-ratio: 1.78;
+    }
+    .video-title {
+      margin-left: 20px;
+    }
+  }
+}
+p {
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+}

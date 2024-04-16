@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  app:
+    container_name: hshop_fe
+    image: hshop_fe
+    build:
+      context: .
+    ports:
+      - "8888:80"

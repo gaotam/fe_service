@@ -1,0 +1,31 @@
+.hot-slider-item, .product-left, .right-item {
+  .sale {
+    span {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: $wood-color;
+      color: white !important;
+      
+      border-radius: 3px;
+      font-weight: bold;
+      padding: 6px 14px 5px;
+      position: absolute;
+    }
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: left !important;
+  }
+
+  p{
+    margin: 10px 0;
+  }
+  
+  .sale-hidden {
+    visibility: hidden
+  }
+}
+
+.el-dialog__body {
+  padding-top: 10px;
+}

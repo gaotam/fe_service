@@ -1,0 +1,28 @@
+.header-studio {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  height: 70px;
+  align-items: center;
+
+  .studio-logo {
+    img {
+      width: 98px;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .avatar {
+    img {
+      height: 32px;
+      width: 32px;
+      border-radius: 90%;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.history {
+  h1 {
+    margin: 20px 0;
+  }
+  .flex {
+    display: flex;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap-reverse;
+    }
+    .left {
+      width: 70%;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    .right {
+      margin-left: 50px;
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+      }
+      .search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+        margin-left: 15px;
+        button {
+          border: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          cursor: pointer;
+          &:hover {
+            background-color: #ececec;
+          }
+        }
+        input {
+          border: none;
+          margin-left: 10px;
+          width: 200px;
+        }
+      }
+      .action {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 10px 0;
+        border-radius: 9999px;
+        padding: 5px 15px;
+        cursor: pointer;
+        &:hover {
+          background-color: #ececec;
+        }
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

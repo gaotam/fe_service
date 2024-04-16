@@ -1,0 +1,73 @@
+.channel {
+  padding: 30px 0;
+  height: 100%;
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    .avt {
+      height: 160px;
+      width: 160px;
+      object-fit: cover;
+      border-radius: 90%;
+    }
+    .info {
+      margin-left: 20px;
+      h1.ussername {
+        font-size: 36px;
+      }
+      p.data {
+        color: rgb(96, 96, 96);
+        font-size: 14px;
+      }
+      button.btn {
+        padding: 8px 15px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 999px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 0;
+        transition: all 0.3 ease-in-out;
+        &::after {
+          content: attr(content);
+        }
+        &.subscribed {
+          color: #000;
+          background-color: #e5e5e5;
+        }
+      }
+    }
+  }
+
+  .tab-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 15px;
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  .el-tabs__active-bar {
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000;
+  }
+  .el-tabs__nav-wrap::after {
+    height: 1px;
+  }
+  .el-tabs__item {
+    &.is-active {
+      color: #000;
+      font-weight: bold;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+}

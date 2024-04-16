@@ -1,0 +1,89 @@
+.trend-video {
+  margin-top: 30px;
+
+  .trend-title {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 72px;
+      width: 72px;
+      border-radius: 90%;
+      margin-right: 10px;
+    }
+  }
+
+  .trend-tab {
+    .video-box {
+      display: flex;
+      max-width: 800px;
+      margin-top: 20px;
+      cursor: pointer;
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+      }
+      .thumbnail {
+        flex: 0.7;
+        @media screen and (max-width: 992px) {
+          flex: 1;
+        }
+        width: 100%;
+        overflow: hidden;
+        opacity: 1;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        position: relative;
+        img {
+          width: 100%;
+          aspect-ratio: 1.78;
+          border-radius: 5px;
+          object-fit: cover;
+          display: block;
+        }
+        .duration {
+          background-color: rgba(0, 0, 0, 0.8);
+          width: max-content;
+          color: #fff;
+          padding: 2px 3px;
+          border-radius: 4px;
+          font-size: 14px;
+          line-height: 12px;
+          position: absolute;
+          right: 3px;
+          bottom: 3px;
+        }
+      }
+      .video-infor {
+        margin-left: 15px;
+        flex: 1;
+        @media screen and (max-width: 767px) {
+          margin-top: 15px !important;
+          margin-left: 0;
+        }
+        h3 {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+        .video-channel {
+          margin-top: 5px;
+        }
+        .video-desc {
+          font-size: 0.8rem;
+          margin-top: 10px;
+          color: #606060;
+        }
+      }
+    }
+  }
+
+  .el-tabs__item {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .el-tabs__active-bar {
+    height: 3px;
+  }
+}
